@@ -1,0 +1,47 @@
+.container {
+  // background-color: lightblue;
+  color: #000;
+}
+
+.pageHeader {
+  padding: 20px 0;
+  display: flex;
+  width: 100%;
+}
+
+.aStyle {
+  line-height: 60px;
+  font-size: 14px;
+  margin-right: 18px;
+  color: #FFFFFF;
+}
+
+@media screen and (min-width: 1000px) {
+  .main {
+    // justify-content: space-between;
+    // flex-direction: row;
+    height: 60px;
+    margin: 0 auto;
+
+   
+  }
+}
+
+.main {
+  display: flex;
+  width: 1000px;
+
+  &>.logoContainer {
+    @extend .aStyle;
+  }
+
+  &>.mainUl {
+    &>li {
+      display: inline-block;
+      &>a {
+        @extend .aStyle;
+      }
+    }
+  }
+
+}
