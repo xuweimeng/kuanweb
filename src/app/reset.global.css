@@ -111,3 +111,7 @@ table {
   border-collapse: collapse;
   border-spacing: 0;
 }
+
+body {
+  font-family: 'HYQiHei-35S,微软雅黑,Microsoft YaHei,平方,PingFang SC';
+}

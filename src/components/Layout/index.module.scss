@@ -1,19 +1,10 @@
-.container {
-  // background-color: lightblue;
-  color: #000;
-}
-
-.pageHeader {
-  padding: 20px 0;
-  display: flex;
-  width: 100%;
-}
-
-.aStyle {
+// 导航Link样式
+.navItem {
   line-height: 60px;
-  font-size: 14px;
+  font-size: 16px;
   margin-right: 18px;
   color: #FFFFFF;
+
 }
 
 @media screen and (min-width: 1000px) {
@@ -21,25 +12,63 @@
     // justify-content: space-between;
     // flex-direction: row;
     height: 60px;
-    margin: 0 auto;
-
-   
   }
 }
 
+
+.pageHeader {
+  width: 100%;
+  background-color: rgba(0, 0, 0, .25);
+}
+
+.navActive {
+  border-bottom: 3px solid #fff;
+}
+
+
 .main {
   display: flex;
-  width: 1000px;
+  margin: 0 auto;
+  height: 60px;
+  padding: 0 100px;
 
   &>.logoContainer {
-    @extend .aStyle;
+    @extend .navItem;
+    margin-right: 80px;
+
+    &>.logoapk {
+
+      display: flex;
+      align-items: center;
+      justify-content: left;
+      height: 100%;
+
+      &>.coolapklogo {
+        width: 80px;
+        height: 80px;
+        margin-right: 10px;
+      }
+
+      &>.coolapkName {
+        font-size: 28px;
+        width: 100px;
+      }
+    }
+
   }
 
   &>.mainUl {
+    flex: 1;
+    display: flex;
+
     &>li {
       display: inline-block;
+      flex: 1;
+
       &>a {
-        @extend .aStyle;
+        @extend .navItem;
+        padding: 18px 0;
+        
       }
     }
   }

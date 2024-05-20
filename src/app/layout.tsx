@@ -10,8 +10,8 @@ import "./reset.global.css"
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: "酷安",
-  description: "发现科技新生活",
+  title: "GEELY吉利汽车",
+  description: "GEELY吉利汽车-造每个人的智能精品车 -吉利汽车官方网站",
 };
 
 interface RootLayoutProps {
@@ -21,7 +21,8 @@ interface RootLayoutProps {
 export default function RootLayout({ children }: Readonly<RootLayoutProps>) {
   return (
     <html lang="en">
-      <body className={inter.className}>
+      <body>
+      {/* <body className={inter.className}> */}
         <div className={styles.layoutContent}>
           <PageHeader />
           <AntdRegistry>{children}</AntdRegistry>
